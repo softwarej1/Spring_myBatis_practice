@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.apache.ibatis.autoconstructor.AutoConstructorMapper">
+	<select id="bodSelAll" resultType="sample.myBatis.boardV01.BoardDTO">
+		select * from boardV01 order by bod_logtime desc
+	</select>
+	
+	<select id="bodSelContent" resultType="sample.myBatis.boardV01.BoardDTO">
+		select * from boardV01 where bod_no = #{bod_no}
+	</select>
+	
+	<select id="bodUpdContent" resultType="sample.myBatis.boardV01.BoardDTO">
+		update boardV01 set bod_readCnt = bod_readCnt + 1 where bod_no = #{bod_no}
+	</select>
+	
+	<select id="bodInsSelec" resultType="sample.myBatis.boardV01.BoardDTO">
+		select max(bod_no) as bod_no from boardV01
+	</select>
+	
+	<insert id="bodInsWrite" parameterType="sample.myBatis.boardV01.BoardDTO">
+		insert into boardV01(
+			bod_no,
+			bod_writer,
+			bod_pwd,
+			bod_subject,
+			bod_email,
+			bod_content,
+			bod_connIp
+		) values(
+			#{bod_no}, #{bod_writer}, #{bod_pwd}, #{bod_subject}, #{bod_email}, #{bod_content}, #{bod_connIp}
+		)
+	</insert>
+	
+	<delete id="bodDel" parameterType="sample.myBatis.boardV01.BoardDTO">
+		delete from boardV01 where bod_no = #{bod_no}
+	</delete>
+	
+	<update id="bodUpd" parameterType="sample.myBatis.boardV01.BoardDTO">
+		update boardV01 set bod_writer = #{bod_writer}, bod_pwd = #{bod_pwd}, bod_subject = #{bod_subject},
+		 bod_email = #{bod_email}, bod_content = #{bod_content} where bod_no = #{bod_no}
+	</update>
+</mapper>

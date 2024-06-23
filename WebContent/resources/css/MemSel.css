@@ -1,0 +1,22 @@
+	table {
+		background-color: #FFFFFF;
+	}
+
+	thead {
+		background-color: Orange;
+		color: white;
+	}
+
+	tfoot{
+		background-color: #EAEAEA;
+		color: Orange;
+	}
+
+	tfoot tr td {
+		width: 180px;
+		font-size: 25px;
+	}
+	
+
+
+

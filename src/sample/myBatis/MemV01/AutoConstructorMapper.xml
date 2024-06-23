@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+       Copyright 2009-2022 the original author or authors.
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+          https://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.apache.ibatis.autoconstructor.AutoConstructorMapper">
+	<select id="memSelAll" resultType="sample.myBatis.MemV01.MemDTO">
+		select * from memberT01
+	</select>
+	
+	<insert id="memInsAll" parameterType="sample.myBatis.MemV01.MemDTO">
+		insert into memberT01(
+			mem_id,
+			mem_pwd,
+			mem_name,
+			mem_phone,
+			mem_email,
+			mem_addr
+		) values(
+			#{mem_id}, #{mem_pwd}, #{mem_name}, #{mem_phone}, #{mem_email}, #{mem_addr}
+		)
+	</insert>
+	
+	<update id="memUpd" parameterType="sample.myBatis.MemV01.MemDTO">
+		update memberT01 set
+		mem_name = #{mem_name},
+		mem_pwd = #{mem_pwd},
+		mem_email = #{mem_email},
+		mem_phone = #{mem_phone},
+		mem_addr = #{mem_addr}
+		where mem_id = #{mem_id} and mem_pwd = #{mem_pwd}
+	</update>
+	
+	<delete id="memDel" parameterType="sample.myBatis.MemV01.MemDTO">
+		delete from memberT01
+		where mem_id = #{mem_id} and mem_pwd = #{mem_pwd}
+	</delete>
+	
+	<select id="memLog" resultType="sample.myBatis.MemV01.MemDTO">
+		select * from memberT01
+		where mem_id = #{mem_id} and mem_pwd = #{mem_pwd}
+	</select>
+</mapper>

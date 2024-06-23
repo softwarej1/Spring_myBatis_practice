@@ -1,0 +1,49 @@
+#container{
+	width: 1000px;
+	margin: 0 auto;
+	height: auto;
+}
+
+#wrapper{
+	width: 500px;
+	margin: auto;
+}
+
+fieldset{
+	border: 3px solid orange;
+}
+
+fieldset legend{
+	color: red;
+	font-weight: bold;
+}
+
+fieldset .InputText{
+	border: 1px solid orange;
+	padding: 10px;
+	padding-left: 100px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+fieldset .InputText .putText{
+	border: 1px solid red;
+	width: 200px;
+	height: 25px;
+}
+
+fieldset .InputText .putsub{
+	border: 1px solid orange;
+	background: orange;
+	color: white;
+	height: 32px;
+	border-radius: 5px;
+}
+
+fieldset .RadioConver{
+	border: 1px solid orange;
+	padding: 10px;
+	padding-left: 20px;
+	border-radius: 5px;
+	font-weight: 500;
+}

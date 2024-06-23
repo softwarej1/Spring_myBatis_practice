@@ -1,0 +1,47 @@
+	table {
+		background-color: #FFC4FF;
+		color: Orange;
+	}
+
+	thead {
+		background-color: #FFB2F5;
+		color: white;
+	}
+
+	tbody{
+		background-color: #FFFAFF;
+		color: #EDA0E3;
+	}
+
+	tr.tr_even{
+		background-color: #FFE8FF;
+	}
+
+	input.textfiled{
+		border: 1px solid #C97CBF;
+	}
+
+	tfoot{
+		background-color: #FFD6FF;
+	}
+
+	input.button{
+		background-color: #DB8ED1;
+		color: white;
+		border: 3px solid #C97CBF;
+
+	}
+
+	.color_box{
+		
+		
+		width: 200px;
+		height: 40px;
+	}
+
+	.color_text{
+		
+		margin-left: 20px;
+		width: 200px;
+		height: 50px;
+	}	

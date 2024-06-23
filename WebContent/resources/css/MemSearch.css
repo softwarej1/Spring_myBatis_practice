@@ -1,0 +1,46 @@
+	#container{
+		width: 2000px;
+		margin: 0 auto;
+	}
+	
+	#wrapper{
+		width: 500px;
+		padding: 30px;
+		float: left;
+		
+	}
+	
+	table {
+		width: 100%;
+		background-color: #CFCFCF;
+	}
+
+	thead {
+		background-color: orange;
+		color: white;
+	}
+
+	tbody{
+		background-color: #ECEBFF;
+		color: #2924BD;
+	}
+
+	tr.tr_even{
+		background-color: #EAEAEA;
+	}
+
+	input.textfiled{
+		border: 1px solid orange;
+	}
+
+	tfoot{
+		background-color: #FAE0D4;
+	}
+
+	input.button{
+		background-color: orange;
+		color: white;
+		border: 3px solid black;
+
+	}
+

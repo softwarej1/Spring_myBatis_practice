@@ -1,0 +1,33 @@
+	table {
+		background-color: #817EE4;
+	}
+
+	thead {
+		background-color: #39369C;
+		color: white;
+	}
+
+	tbody{
+		background-color: #ECEBFF;
+		color: #2924BD;
+	}
+
+	tr.tr_even{
+		background-color: #C7D3ED;
+	}
+
+	input.textfiled{
+		border: 1px solid #2924BD;
+	}
+
+	tfoot{
+		background-color: #7C96C9;
+	}
+
+	input.button{
+		background-color: #36589C;
+		color: white;
+		border: 3px solid #002266;
+
+	}
+

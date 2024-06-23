@@ -1,0 +1,50 @@
+#container{
+	width: 1000px;
+	margin: 0 auto;
+	height: auto;
+}
+
+#wrapper{
+	width: 800px;
+	margin: auto;
+}
+
+fieldset{
+	border: 6px double green;
+	border-radius: 15px;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 20px;
+	color: #003E00;
+	padding: 0;
+}
+
+fieldset .selector{
+	width: 120px;
+	height: 36px;
+	margin-left: 80px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	border: 2px solid #469840;
+	color: #003E00;
+
+}
+
+fieldset .selector option{
+	color: #003E00;
+}
+
+fieldset .inputText{
+	width: 400px;
+	height: 30px;
+	border: 2px solid #469840;
+	border-radius: 5px;
+}
+
+fieldset .insub{
+	width: 70px;
+	height: 35px;
+	border: 2px solid #469840;
+	border-radius: 5px;
+	color: #355400;
+}

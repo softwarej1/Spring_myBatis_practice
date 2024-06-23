@@ -1,0 +1,41 @@
+#wrapper {margin:auto; width:1190px;}
+	
+	body { font-family: "comic sans ms";}
+
+	table{
+		margin:auto;
+		width: 900px;
+		text-align: center;
+		padding: 1px;
+		font-size: 30px; 
+	}
+
+	thead{
+		height: 60px;
+	}
+
+	tr{
+		height: 80px;
+	}
+	
+
+
+	td.td_discription{
+		width: 250px;
+	}
+
+	input.textfiled{
+		width: 500px;
+		border-radius: 5px;
+		font-size: 25px;
+		font-family: "comic sans ms";
+		padding: 10px;
+	}
+
+	input.button{
+		width: 200px;
+		border-radius: 10px;
+		font-family: "comic sans ms";
+		padding: 10px;
+		font-size: 25px;
+	}
